@@ -1,8 +1,11 @@
-echo "'{ "apiKey": "1292e5796497e3a5973a9fa168314af7ca9dfa88f55b4d8d4fb7d7e28bd63a89", "type": "advanced", "advancedInput": " >> /t23Enh.txt
-wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Tier23/T23_Shaman_Enhancement.simc" -A /t23Enh.txt 
-echo "}'" >> /t23Enh.txt
+echo "'{ "apiKey": "1292e5796497e3a5973a9fa168314af7ca9dfa88f55b4d8d4fb7d7e28bd63a89", "type": "advanced", "advancedInput": " >> /data.txt
+wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Tier23/T23_Shaman_Enhancement.simc" -A /download.txt
+for ln in `cat /download.txt`; do
+    echo "$ln" >> /data.txt
+done
+echo "}'" >> /data.txt
 
-for ln in `cat /t23Enh.txt`; do
+for ln in `cat /data.txt`; do
     echo "$ln"
 done
 
