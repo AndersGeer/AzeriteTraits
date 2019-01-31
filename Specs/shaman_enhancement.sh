@@ -6,7 +6,7 @@ cat /t23Enh.txt | while read line; do
 done
 
 curl -X POST -H "Content-Type: application/json" \
-  -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": 
+  -d '{ "apiKey": "1292e5796497e3a5973a9fa168314af7ca9dfa88f55b4d8d4fb7d7e28bd63a89", "type": "advanced", "advancedInput": 
 "for i in "${array[@]}"
 do
 	echo $i
