@@ -15,5 +15,5 @@ echo "$http_code"
 echo "$response"
 
 curl -X POST -H "Content-Type: application/json" \	
---data-binary @"/data.txt" \	
+--data-binary @/data.txt \	
 https://www.raidbots.com/sim
