@@ -6,7 +6,9 @@ wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Ti
 #  done </t23Enh.txt
 #echo ${AArray[MARX_BUILD_NO]}
 
-echo /T23Enh.txt
+cat myfile.txt | while read line; do
+    echo "$line"
+done
 
 #curl -X POST -H "Content-Type: application/json" \
 #  -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": "armory=us,malganis,seriallos"}' \
