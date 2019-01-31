@@ -9,7 +9,7 @@ cat /data.txt | while read line; do
     echo "$line" 
 done
 
-response=$(curl -X POST -H "Content-Type: application/json" --data-binary @/data.txt --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
+response=$(curl -X POST -H "Content-Type: application/json" --data-binary @"/data.txt" --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
 
 echo "$http_code"
 echo "$response"
