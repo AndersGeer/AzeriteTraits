@@ -1,5 +1,7 @@
 language: bash
-script: Specs/shaman_enhancement.sh
+script: 
+- sudo chmod u+x Specs/shaman_enhancement.sh
+- sudo Specs/shaman_enhancement.sh
 notifications:
  email:
   on_success: never # default: change
