@@ -1,6 +1,6 @@
 wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Tier23/T23_Shaman_Enhancement.simc" -O /t23Enh.txt 
 index=0
-declare -a MYARRAY=()
+declare -a MYARRAY
 cat /t23Enh.txt | while read line; do
     MYARRAY[$index]="$line"
     index=$(($index+1))
