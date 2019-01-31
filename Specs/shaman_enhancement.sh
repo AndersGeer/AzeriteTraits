@@ -14,4 +14,5 @@ done
 #echo "$http_code"
 #echo "$response"
 
-curl -X POST -H "Content-Type: application/json" -d @/data.txt https://www.raidbots.com/sim
+curl -X POST -H "Content-Type: application/json" -d "armory=ey,draenor,shanyao" https://www.raidbots.com/sim
+"-d @/data.txt
