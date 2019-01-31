@@ -1,15 +1,14 @@
 wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Tier23/T23_Shaman_Enhancement.simc" -O /t23Enh.txt 
-
-#declare -A AArray
-#while IFS== read var val ;do
-#    [[ "$var" =~ ^[A-Za-z_]*$ ]] && AArray[$var]=$val
-#  done </t23Enh.txt
-#echo ${AArray[MARX_BUILD_NO]}
-
+index=0
 cat /t23Enh.txt | while read line; do
-    echo "$line"
+    MYARRAY[$index]="$line\R\N"
+    index=$(($index+1))
 done
 
-#curl -X POST -H "Content-Type: application/json" \
-#  -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": "armory=us,malganis,seriallos"}' \
-#  https://www.raidbots.com/sim
+curl -X POST -H "Content-Type: application/json" \
+  -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": 
+"for i in "${array[@]}"
+do
+	echo $i
+done"}' \
+  https://www.raidbots.com/sim
