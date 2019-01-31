@@ -3,7 +3,7 @@ wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Ti
 declare -A AArray
 while IFS== read var val ;do
     [[ "$var" =~ ^[A-Za-z_]*$ ]] && AArray[$var]=$val
-  done <t23Enh.txt
+  done </t23Enh.txt
 echo ${AArray[MARX_BUILD_NO]}
 
 #curl -X POST -H "Content-Type: application/json" \
