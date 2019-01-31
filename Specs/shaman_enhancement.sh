@@ -8,5 +8,5 @@ echo "}'" >> /data.txt
 #cat /data.txt | while read line; do
 #    echo "$line" 
 #done
-response=$(curl -X POST -H "Content-Type: application/json" --data-binary /data.txt https://www.raidbots.com/sim --write-out %{http_code} --silent --output /dev/null servername)
+response=$(curl -X POST -H "Content-Type: application/json" --data-binary /data.txt https://www.raidbots.com/sim --write-out %{http_code} --output /dev/null servername)
 
