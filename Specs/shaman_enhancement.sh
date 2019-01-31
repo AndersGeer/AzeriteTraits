@@ -5,7 +5,7 @@ cat /t23Enh.txt | while read line; do
     index=$(($index+1))
 done
 
-for i in "${array[@]}"
+for i in "${MYARRAY[@]}"
 do
 	echo $i
 done
