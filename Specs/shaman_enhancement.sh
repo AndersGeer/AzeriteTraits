@@ -14,6 +14,6 @@ response=$(curl -X POST -H "Content-Type: application/json" --data-binary @"/dat
 echo "$http_code"
 echo "$response"
 
-#curl -X POST -H "Content-Type: application/json" \	
-#--data-binary /data.txt \	
-#https://www.raidbots.com/sim
+curl -X POST -H "Content-Type: application/json" \	
+--data-binary @"/data.txt" \	
+https://www.raidbots.com/sim
