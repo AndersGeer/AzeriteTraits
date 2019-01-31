@@ -2,7 +2,7 @@ wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Ti
 index=0
 
 cat /t23Enh.txt | while read line; do
-    "$line"
+    echo "$line"
     index=$(($index+1))
 done
 
