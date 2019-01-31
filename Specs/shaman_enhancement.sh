@@ -6,7 +6,7 @@ wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Ti
 #  done </t23Enh.txt
 #echo ${AArray[MARX_BUILD_NO]}
 
-cat myfile.txt | while read line; do
+cat /t23Enh.txt | while read line; do
     echo "$line"
 done
 
