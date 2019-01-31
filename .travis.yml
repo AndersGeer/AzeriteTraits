@@ -1,4 +1,6 @@
 language: bash
+script:
+ - shaman_enhancement.sh
 notifications:
  email:
   on_success: never # default: change
