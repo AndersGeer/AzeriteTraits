@@ -5,8 +5,12 @@ cat /download.txt | while read line; do
 done
 echo "}'" >> /data.txt
 
-#cat /data.txt | while read line; do
-#    echo "$line" 
-#done
-response=$(curl -X POST -H "Content-Type: application/json" --data-binary /data.txt --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
+cat /data.txt | while read line; do
+    echo "$line" 
+done
 
+response=$(curl -X POST -H "Content-Type: application/json" --data-binary @/data.txt --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
+
+#curl -X POST -H "Content-Type: application/json" \	
+#--data-binary /data.txt \	
+#https://www.raidbots.com/sim
