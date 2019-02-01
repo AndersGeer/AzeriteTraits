@@ -5,6 +5,9 @@ cat /download.txt | while read line; do
 done
 echo "\"}" >> /data.txt
 
+
+echo "armory=eu,draenor,shanyao" > /data.txt
+
 cat /data.txt | while read line; do
     echo "$line" 
 done
