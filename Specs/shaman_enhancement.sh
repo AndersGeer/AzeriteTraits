@@ -11,7 +11,7 @@ echo "\"}" >> /data.txt
 
 #
 #curl -X POST -H "Content-Type: application/json" -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": "armory=us,malganis,seriallos"}' https://www.raidbots.com/sim
-response=$(curl -X POST -H "Content-Type: application/json" --data @'/data.txt' --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
+response=$(curl -X POST -H "Content-Type: application/json" --data-raw @'/data.txt' --write-out %{http_code} --output /dev/null https://www.raidbots.com/sim)
 
 
 echo "$response"
