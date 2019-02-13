@@ -7,8 +7,8 @@
 
 
 #echo "{\"apiKey\": \"1292e5796497e3a5973a9fa168314af7ca9dfa88f55b4d8d4fb7d7e28bd63a89\", \"type\": \"advanced\", \"advancedInput\": \"armory=eu,draenor,shanyao\"}" > /data.txt
-getval=$(F2)   
-echo $getval
+F2
+echo $?
 
 #
 #curl -X POST -H "Content-Type: application/json" -d '{ "apiKey": "blah", "type": "advanced", "advancedInput": "armory=us,malganis,seriallos"}' https://www.raidbots.com/sim
@@ -33,5 +33,5 @@ function F2()
     
     retval="$retval "\"}"
     
-    echo "$retval"
+    return "$retval"
 }
