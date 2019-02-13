@@ -2,8 +2,8 @@ Download_Item() {
     worldval=""
     cat /download.txt | while read line; do
     worldval="$worldval$line \r\n" | tr "\"" "_"
+    echo $worldval
     done
-    #echo " --- "
     return $worldval
 }
 
