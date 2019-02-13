@@ -3,11 +3,11 @@ F2_world () {
     wget "https://raw.githubusercontent.com/simulationcraft/simc/bfa-dev/profiles/Tier23/T23_Shaman_Enhancement.simc" -O /download.txt
     cat /download.txt | while read line; do
     #echo $line
-    retval="$retval$line \r\n" | tr "\"" "_"
+    worldval ="$worldval$line \r\n" | tr "\"" "_"
     #echo $retval
     done
     
-    retval="$retval \"}\""
+    retval="$retval $worldval \"}\""
     
     echo "$retval"
 }
