@@ -4,7 +4,7 @@ Download_Item() {
     #echo $line
     worldval="$worldval$line \r\n" | tr "\"" "_"
     done
-    echo worldval
+    echo $worldval
 }
 
 F2_world () {
