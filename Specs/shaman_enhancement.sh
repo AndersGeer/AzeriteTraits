@@ -23,7 +23,7 @@ echo $?
 #-d "armory=ey,draenor,shanyao"
 
 
-function F2()
+function F2
 {
     local  retval="{\"apiKey\": \"1292e5796497e3a5973a9fa168314af7ca9dfa88f55b4d8d4fb7d7e28bd63a89\", \"type\": \"advanced\", \"simcVersion\": \"nightly\", \"advancedInput\": \""
     
